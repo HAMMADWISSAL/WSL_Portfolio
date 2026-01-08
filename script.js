@@ -262,7 +262,7 @@
                       />
                     ) : (
                       <img 
-                        src="./images/WSLPersonalLogo-LIGHT-bgremoved.png" 
+                        src="../images/WSLPersonalLogo-LIGHT-bgremoved.png" 
                         alt="WSL Logo" 
                         className="h-12 transition-all duration-500 hover:scale-110 hover:rotate-3" 
                       />
@@ -415,7 +415,7 @@
                              borderWidth: '8px'
                            }}>
                         <img 
-                          src="./images/personalPicture-nobg.png" 
+                          src="../images/personalPicture-noBg.png" 
                           alt="Hammad Wissal" 
                           className="w-full h-full object-cover transition-all duration-700 hover:scale-110" 
                         />
@@ -443,7 +443,7 @@
                              boxShadow: '0 20px 60px rgba(163, 74, 40, 0.2)'
                            }}>
                         <img 
-                          src="./images/personalPicture-noBg.png" 
+                          src="../images/personalPicture-noBg.png" 
                           alt="Hammad Wissal" 
                           className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110" 
                         />
