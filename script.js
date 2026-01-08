@@ -458,7 +458,7 @@
                       eye for design and user experience.
                     </p>
                     <div className="space-y-6 mb-10">
-                      <div className="grid grid-cols-2 gap-6">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div className="transition-all duration-500 hover:scale-105 hover:-translate-y-1 p-4 rounded-xl" style={{backgroundColor: isDarkMode ? '#2a1f1f' : '#f5f4e9'}}>
                           <p className="text-sm mb-2" style={{color: accentSecondary}}>Name:</p>
                           <p className={`${textPrimary} font-medium`}>Hammad Wissal</p>
