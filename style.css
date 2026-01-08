@@ -163,3 +163,94 @@
         0% { transform: translateX(-100%); }
         100% { transform: translateX(100%); }
       }
+      /* Responsive, mobile-first adjustments */
+:root {
+  --hero-title-size: 2.4rem;
+  --hero-sub-size: 1.25rem;
+  --profile-size: 240px;
+  --btn-px: 1rem;
+  --btn-py: 0.6rem;
+}
+
+/* Mobile defaults */
+#home h2 { font-size: var(--hero-title-size) !important; line-height: 1.05; }
+#home p.text-3xl { font-size: var(--hero-sub-size) !important; }
+#home .w-96.h-96,
+#about .w-96.h-96,
+section .w-96.h-96 { width: var(--profile-size) !important; height: var(--profile-size) !important; max-width: 90vw; }
+
+img.object-cover { width: 100%; height: auto; display: block; }
+
+/* Buttons: reduce padding on small screens */
+#home .px-10.py-4,
+#about .px-10.py-4 { padding: var(--btn-py) var(--btn-px) !important; font-size: 1rem; }
+
+/* Contact icon boxes */
+#contact .p-6 { width: 80px !important; height: 80px !important; }
+
+/* Smaller headings on mobile */
+h3.text-5xl { font-size: 1.8rem !important; }
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  :root { --hero-title-size: 3rem; --hero-sub-size: 1.5rem; --profile-size: 320px; --btn-px: 1.75rem; --btn-py: 0.9rem; }
+  h3.text-5xl { font-size: 2.8rem !important; }
+}
+
+/* Desktop and large screens */
+@media (min-width: 1024px) {
+  :root { --hero-title-size: 4rem; --hero-sub-size: 2.5rem; --profile-size: 384px; --btn-px: 2.5rem; --btn-py: 1rem; }
+  h2.text-6xl { font-size: 4rem !important; }
+  h3.text-5xl { font-size: 3.2rem !important; }
+  #contact .p-6 { width: 100px !important; height: 100px !important; }
+}
+/* Responsive fixes for contact icons on mobile */
+
+/* Ensure contact anchor boxes center their content and are visible */
+#contact a {
+  overflow: visible !important;
+  position: relative;
+}
+
+#contact .p-6 {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 80px !important;
+  height: 80px !important;
+  padding: 0.5rem !important;
+  box-sizing: border-box !important;
+}
+
+/* Make the icon container fill the anchor and center the SVG */
+#contact .icon-hover {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Force SVGs to scale inside the boxes and use currentColor for stroke */
+#contact .icon-hover svg {
+  width: 40px !important;
+  height: 40px !important;
+  max-width: 70% !important;
+  max-height: 70% !important;
+  display: block !important;
+  stroke: currentColor !important;
+  fill: none !important;
+}
+
+/* Make the row wrap on small screens so icons are always visible */
+#contact .flex {
+  gap: 12px !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+}
+
+/* Slightly larger icons on tablet/desktop */
+@media (min-width: 768px) {
+  #contact .p-6 { width: 100px !important; height: 100px !important; }
+  #contact .icon-hover svg { width: 48px !important; height: 48px !important; }
+}
