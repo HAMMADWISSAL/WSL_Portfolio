@@ -262,7 +262,7 @@
                       />
                     ) : (
                       <img 
-                        src="./images/WSLPersonalLogo-LIGHT-bgremoved.png" 
+                        src="./images/WSLPersonalLogo-LIGHT-bgRemoved.png" 
                         alt="WSL Logo" 
                         className="h-12 transition-all duration-500 hover:scale-110 hover:rotate-3" 
                       />
