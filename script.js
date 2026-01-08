@@ -256,7 +256,7 @@
                   <div className="h-15 w-20 flex items-center">
                     {isDarkMode ? (
                       <img 
-                        src="./images/WSLPersonalLogo-DARK-removedbg.png" 
+                        src="./images/WSLPersonalLogo-dark-removedbg.png" 
                         alt="WSL Logo" 
                         className="h-12 transition-all duration-500 hover:scale-110 hover:rotate-3" 
                       />
