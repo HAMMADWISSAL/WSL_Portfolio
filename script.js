@@ -400,7 +400,7 @@
                           e.target.style.boxShadow = '0 10px 30px rgba(163, 74, 40, 0.3)';
                         }}
                       >
-                        <a href="WISSAL_HAMMAD_CV.pdf" download>HIRE ME</a>
+                        <a href="Hammad_Wissal_CV.pdf" download>HIRE ME</a>
                       </button>
                       
                     </div>
@@ -495,7 +495,7 @@
                         e.target.style.boxShadow = '0 10px 30px rgba(163, 74, 40, 0.3)';
                       }}
                     >
-                      <a href="WISSAL_HAMMAD_CV.pdf" download> DOWNLOAD CV</a>
+                      <a href="Hammad_Wissal_CV.pdf" download> DOWNLOAD CV</a>
                     </button > 
                   </div>
                 </div>
